@@ -4,7 +4,7 @@ var request = require("request");
 const app = express();
 const router = express.Router();
 
-router.get('/',(req,res) => {
+router.get('/blog',(req,res) => {
     request(
         "https://www.fossnsbm.org",
         function(error, response, body){
